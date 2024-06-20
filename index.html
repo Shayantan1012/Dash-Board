@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-100">
+    <div class="flex min-h-screen flex-no-wrap">
+        <div class="w-80  bg-slate-500 hidden md:block">
+            <!--Dashboard wrapper-->
+                <div class="flex justify-center items-center h-[60px] bg-slate-800">
+                    <h1 class="text-white font-bold text-3xl">Dashboard</h1>
+                </div>
+        
+                <nav class="mt-9">
+                    <div class="flex-col  justify-center ">
+                        <a href="#" class="flex px-6 py-3 mt-2 items-center bg-slate-400"> 
+                            <span class="text-gray-200 hover:text-gray-700 text-2xl mx-3">Home</span></a> 
+                        </a>
+                        <a href="#" class="flex px-6 py-3 mt-5 hover:bg-slate-600 items-center bg-slate-400"> 
+                            <span class="text-gray-200 hover:text-gray-700 text-2xl mx-3">Analytics</span></a> 
+                        </a>
+                        <a  href="#"class="flex px-6 py-3 mt-2 hover:bg-slate-600 items-center bg-slate-400"> 
+                            <span class="text-gray-200 hover:text-gray-700 text-2xl mx-3">Sales</span></a> 
+                        </a>
+                        <a  href="#"class="flex px-6 py-3 mt-2 hover:bg-slate-600 items-center bg-slate-400"> 
+                            <span class="text-gray-200 hover:text-gray-700 text-2xl mx-3">Messages</span></a> 
+                        </a>
+                                               
+                    </div>
+                </nav>
+        </div>
+        <div class="w-full flex-col ">
+            <header class="flex justify-end bg-white rounded-lg mx-2 my-2 justify-between">
+                <div>
+                <button class=" md:hidden px-3 py-4 border-solid border-black border-2 rounded-lg shadow-2xl hover:shadow-none">
+                    <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                </button>
+                </div>
+            <div class="flex items-center ">
+                <button class="shadow-lg border-lime-950 border-0 w-40 rounded-lg px-8 py-3 flex items-center  justify-center bg-zinc-100 hover:shadow-none transition-shadow duration-300ms ease-in-out">
+                <span class="mr-2 font-semibold ">Sign Out</span>
+                </button>
+            </div>
+            </header>
+            <main class="p-4 md:p-6">
+        <div class="flex gap-5 flex-wrap mx-2">
+            <div class=" basis-1/5 shadow-2xl rounded-md hover:shadow-none mt-3 flex-col items-center min-w-[40%] transition-shadow duration-300ms ease-in-out">
+                <h1 class="font-bold text-2xl">Revinue</h1>
+                <span class="text-3xl text-slate-400">$12,000</span>
+            </div>
+            <div class=" basis-1/5 shadow-2xl rounded-md hover:shadow-none mt-3 flex-col items-center min-w-[40%] transition-shadow duration-300ms ease-in-out">
+                <h1 class="font-bold text-2xl">Users</h1>
+                <span class="text-3xl text-slate-400">5000</span>
+            </div>
+            <div class=" basis-1/5 shadow-2xl rounded-md hover:shadow-none mt-3 flex-col items-center min-w-[40%] transition-shadow duration-300ms ease-in-out">
+                <h1 class="font-bold text-2xl">Sales</h1>
+                <span class="text-3xl text-slate-400">6700</span>
+            </div>
+
+        </div>
+        <div class="flex  justify-between items-center my-2">
+                <h1 class="mr-3 text-lg font-semibold mx-2">Recent activities</h1>
+                <button class="px-3 py-2 mx-2 bg-amber-500 font-semibold rounded-lg shadow-md hover:bg-amber-700">View All</button>
+        </div>
+        <div class="flex justify-center">
+            <table class="w-full">
+            <tr class=" w-full border-b ">
+                <th class="py-2">Date</th>
+                <th class="py-2">Activity</th>
+                <th class="py-2">Status</th>
+            </tr>
+            <tr class="border-b">
+                <td class="py-2">10/12/2004</td>
+                <td class="py-2">Logged In</td>
+                <td class="py-2 text-green-400">Completed</td>
+            </tr>
+            <tr class="border-b">
+                <td class="py-2">10/12/2004</td>
+                <td class="py-2">Logged In</td>
+                <td class="py-2 text-green-400">Completed</td>
+            </tr>
+            <tr class="border-b">
+                <td class="py-2">10/12/2004</td>
+                <td class="py-2">Logged In</td>
+                <td class="py-2 text-red-600">Pending....</td>
+            </tr>
+            <tr class="border-b">
+                <td class="py-2">10/12/2004</td>
+                <td class="py-2">Logged In</td>
+                <td class="py-2 text-green-400">Completed</td>
+            </tr>
+
+            </table>
+        </div>
+        <div class="flex-col mx-3 my-3 bg-white border rounded-lg shadow-lg h-64 ">
+                    <h1 class="font-semibold mx-4">Activity Feed</h1>
+        <div class="overflow-y-scroll h-[80%]">
+                <div class="flex items-center mb-4">
+                        <div class="bg-orange-700 rounded-full flex justify-center items-center w-10 h-10 mx-3 mt-3">
+                        <h1 class="text-lg text-white">JD</h1> 
+                        </div>
+                        <div class="mt-4 mx-5">
+                        <h1 class="font-semibold">John Dow</h1>
+                        <p class="text-gray-600">Logged In</p>
+                        </div>
+                </div>
+                <div class="flex items-center mb-4">
+                    <div class="bg-blue-600 rounded-full flex justify-center items-center w-10 h-10 mx-3 mt-3">
+                    <h1 class="text-lg text-white">JD</h1> 
+                    </div>
+                    <div class="mt-4 mx-5">
+                    <h1 class="font-semibold">John Dow</h1>
+                    <p class="text-gray-600">Logged In</p>
+                    </div>
+                </div>
+                <div class="flex items-center mb-4">
+                <div class="bg-green-600 rounded-full flex justify-center items-center w-10 h-10 mx-3 mt-3">
+                <h1 class="text-lg text-white">JD</h1> 
+                </div>
+                <div class="mt-4 mx-5">
+                <h1 class="font-semibold">John Dow</h1>
+                <p class="text-gray-600">Logged In</p>
+                </div>
+                </div>
+                <div class="flex items-center mb-4">
+                            <div class="bg-red-600 rounded-full flex justify-center items-center w-10 h-10 mx-3 mt-3">
+                            <h1 class="text-lg text-white">JD</h1> 
+                            </div>
+                            <div class="mt-4 mx-5">
+                            <h1 class="font-semibold">John Dow</h1>
+                            <p class="text-gray-600">Logged In</p>
+                            </div>
+                </div>
+                <div class="flex items-center mb-4">
+                        <div class="bg-orange-700 rounded-full flex justify-center items-center w-10 h-10 mx-3 mt-3">
+                        <h1 class="text-lg text-white">JD</h1> 
+                        </div>
+                        <div class="mt-4 mx-5">
+                        <h1 class="font-semibold">John Dow</h1>
+                        <p class="text-gray-600">Logged In</p>
+                        </div>
+                </div>    
+                <div class="flex items-center mb-4">
+                    <div class="bg-red-600 rounded-full flex justify-center items-center w-10 h-10 mx-3 mt-3">
+                    <h1 class="text-lg text-white">JD</h1> 
+                    </div>
+                    <div class="mt-4 mx-5">
+                    <h1 class="font-semibold">John Dow</h1>
+                    <p class="text-gray-600">Logged In</p>
+                    </div>
+            </div>      
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-700 rounded-full flex justify-center items-center w-10 h-10 mx-3 mt-3">
+                <h1 class="text-lg text-white">JD</h1> 
+                </div>
+                <div class="mt-4 ml-5">
+                <h1 class="font-semibold">John Dow</h1>
+                <p class="text-gray-600">Logged In</p>
+                </div>
+        </div>      
+
+       </div>
+        </div>
+            </main>
+            <div class="flex justify-center py-5 bg-cyan-700 font-semibold">
+                <footer >&copy; 2024 Dashboard. All right reserved.</footer>
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>
